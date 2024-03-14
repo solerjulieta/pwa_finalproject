@@ -1,0 +1,290 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header{ position:relative;}
+
+body{
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer{margin-top: auto;}
+
+#logo{
+    width: 120px;
+    height: 31px;
+    background: url("../img/logomobile.png") no-repeat center center;
+    font-size: 0;
+    position: absolute;
+    z-index: 1;
+    margin-top: .5rem;
+    margin-left: 1rem;
+}
+
+nav{background-color:#3366CC;}
+
+.nav-link{color: white;}
+
+.nav-link:hover{color:#8eb0f5;}
+
+.navbar .navbar-toggler{border: none;}
+
+.navbar .navbar-toggler:focus{box-shadow: none;}
+
+.navbar .navbar-toggler-icon{
+	background: url("../img/menu.png") no-repeat center center;
+	background-size: cover;
+}
+
+#infoUtil{
+    padding: 1rem;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    margin-bottom:2rem;
+    margin-top: 2rem;
+}
+
+#infoUtil div{
+    align-items: center;
+    padding: 1rem;
+}
+
+#infoUtil svg{color: #3366CC;}
+
+#infoUtil p:first-of-type{
+    font-weight: bold;
+    margin: 0;
+}
+
+#infoUtil p:last-of-type{
+    color: gray;
+    font-size: .9rem;
+    margin: 0;
+}
+
+#sinConexion{
+    color: white;
+    display: none;
+    font-weight: bold;
+}
+
+footer{
+    background: url(../img/logofooter.png) #3366CC no-repeat center center;
+    padding: 2rem;
+    height: 5rem;
+}
+
+/*Inicio*/
+
+a{text-decoration: none;}
+
+#productos picture{
+    text-align: center;
+}
+
+.secCard{
+    padding-right: 4rem;
+    padding-left: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.card{
+    text-align: center;
+    box-shadow: 0px 1px 4px rgba(0,0,0,0.2);
+}
+
+.card a{text-decoration: none;}
+
+.card:hover{
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+    transform: translateY(-1%);    
+}
+
+.card h2{
+    font-size: 1.2em;
+    margin-top: .5rem;
+    color: black;
+}
+
+.card p:first-of-type{
+    color: gray;
+    margin-bottom: .25rem;
+}
+
+.card p:last-of-type{
+    font-size: 1.5em;
+    color:#3366CC;
+    margin-bottom: 0;
+}
+
+picture img{
+    text-align: center;
+    max-width: 100%;
+}
+
+#accionesApp{margin-top: 2rem;}
+
+#accionesApp button{margin-bottom: 1rem;}
+
+#accionesApp .row{
+    align-items: center;
+    justify-content: center;
+}
+
+.alerta{display: none;}
+
+.alerta div:first-of-type{
+    justify-content: center;
+    margin-bottom: .25rem;
+    align-items: center;
+}
+
+.alerta, .compartir-app, #detalleLibro button, .offcanvas-body a{
+    background-color:#3366CC;
+    color: white;
+    box-shadow: none;
+}
+
+#infoLibro button:hover, .alerta:hover, .compartir-app:hover, .offcanvas-body a:hover{
+    background-color: white;
+    border-color:#3366CC;
+    color:#3366CC;
+}
+
+.compartir-app button{margin-top: 1rem;}
+
+/*Detalle Libro*/
+
+#detalleLibro{margin-top: 2rem;}
+
+#detalleLibro picture{text-align: center;}
+
+#detalleLibro button{margin-bottom: 1.5rem;}
+
+#detalleLibro svg{margin-right: .5rem;}
+
+#precioLibro{
+    color:#3366CC;
+    font-size: 1.1rem;
+}
+
+#sinopsis {
+    font-size: .9rem;
+    line-height: 1.5rem;
+}
+
+#infoLibro{margin-top: 1rem;}
+
+.container-carrito{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.container-carrito picture{
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.container-carrito p{margin-bottom: 0;}
+
+.container-carrito > div{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/*OffCanvas*/
+
+#aniadido{
+    display: none;
+    margin-top: 2rem;
+}
+
+#contadorCarrito{
+    color: white;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+#carouselInteres{margin-top: 1.5rem;}
+
+#carouselInteres h3{
+   font-size: 1.2rem;
+   color:gray;
+   margin-bottom: 1rem;
+}
+
+.swiper-slide{max-width: 190px;}
+
+.container .swiper-slide {
+    position: relative;
+    text-align: center;
+    background: #fff;
+    text-align: start;
+    box-shadow: 0px 4px 4px rgba(196, 196, 196, 0.25);
+}
+
+.swiper-button-next, .swiper-button-prev {display: none;}
+
+.noMostrar{display: none;}
+
+.linea{
+    border-top: 1px solid #d3dff6;
+    height: 2px;
+    max-width: 80%;
+    padding: 0;
+    margin: 20px auto 0 auto;
+}
+
+/*Sin conexión*/
+#sin-conexion{display: none;}
+
+@media screen and (max-width: 576px){
+    .navbar > div{
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+}
+
+@media screen and (max-width: 991px){
+    #logo{
+        left: calc(50% - 60px);
+        background: url("../img/logomobile.png") no-repeat;
+    }
+
+    #detalleLibro picture{text-align: center;}  
+
+    #listProd li{margin: 1rem 1rem;}
+}
+
+@media screen and (min-width: 992px){
+
+    #detalleLibro p:last-of-type{font-size: .9rem;}
+
+    #listProd li{margin: .25rem .25rem;}
+
+    #carouselInteres{margin-top: 3rem;}
+
+    .swipper-wrapper{justify-content: center;}
+
+    #carouselInteres .swiper-slide,  #carouselInteres .card{
+        width: 150px !important;
+        margin-right: 2rem !important;
+    }
+
+}
+
+@media screen and (min-width: 1200px){
+    .swiper-button-next, .swiper-button-prev{top: 75%;}
+
+    .swiper-button-next{right: 80px !important;}
+
+    .swiper-button-prev{left: 80px !important;}
+}
+
+

@@ -1,0 +1,32 @@
+{
+    "theme_color": "#3366CC",
+    "background_color": "#3366CC",
+    "display": "fullscreen",
+    "scope": "/pwa/pwa-parcial-2-dwm3av-soler-julieta/",
+    "start_url": "/pwa/pwa-parcial-2-dwm3av-soler-julieta/index.php",
+    "name": "Libroteca",
+    "short_name": "Libroteca",
+    "description": "Encontr\u00e1 ese libro que est\u00e1s buscando en la mejor tienda.",
+    "icons": [
+        {
+            "src": "img/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "img/icon-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "img/icon-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "img/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
